@@ -2,61 +2,61 @@
 
 ## Description
 
-**Rooftop Cat** একটি ছোট, browser-based endless runner game। ঝড়ের রাতে একটি বিড়াল শহরের rooftop ধরে দৌড়াতে থাকে, আর player-এর কাজ হলো obstacle এড়িয়ে যত বেশি দূর সম্ভব টিকে থাকা। দূরত্ব যত বাড়ে, score তত বাড়ে এবং প্রতি 1000 মিটারে achievement দেখানো হয়।
+**Rooftop Cat** is a browser-based endless runner game where a cat runs across city rooftops during a storm. Your goal is to avoid obstacles, stay alive, and travel as far as possible while chasing a higher score.
 
-এটি কোনো fixed-level game নয়; প্রতিবার নতুনভাবে obstacle তৈরি হয়, তাই প্রতিটি run কিছুটা আলাদা হয়। গেমটি HTML Canvas এবং vanilla JavaScript দিয়ে তৈরি করা হয়েছে, তাই আলাদা কোনো game engine বা installation প্রয়োজন নেই।
+Each run is different because obstacles are generated randomly. The game is built with HTML Canvas and vanilla JavaScript, so it does not require a game engine, installation, or external dependencies.
 
-## কীভাবে খেলবেন
+## How to Play
 
-1. `RooftopCat.html` ফাইলটি যেকোনো আধুনিক web browser-এ খুলুন।
-2. শুরুতে পছন্দের cat avatar নির্বাচন করুন। ছয়টি option আছে: Orange, Black, White, Calico, Siamese এবং Tuxedo।
-3. দৌড় শুরু হলে cat-কে jump করিয়ে সামনে থাকা box, gap এবং ledge এড়িয়ে চলুন।
-4. Jump করার জন্য:
-   - Keyboard-এ `Space` অথবা `Arrow Up` চাপুন।
-   - Mobile বা touch device-এ screen-এর যেকোনো জায়গায় tap করুন।
-   - Browser-এ canvas-এর যেকোনো জায়গায় click করলেও jump হবে।
-5. একসঙ্গে সর্বোচ্চ ৩টি jump করা যায়। মাটিতে নামলে jump count আবার reset হয়।
-6. Pause করতে উপরের ডানদিকের pause button চাপুন।
-7. Box-এ ধাক্কা লাগলে অথবা rooftop থেকে পড়ে গেলে game over হবে। এরপর `run again` button চাপলে নতুন run শুরু করা যাবে।
+1. Open `RooftopCat.html` in any modern web browser.
+2. Choose one of the six cat avatars: Orange, Black, White, Calico, Siamese, or Tuxedo.
+3. Jump over boxes, gaps, and ledges as you run across the rooftops.
+4. Use any of these controls to jump:
+   - Press `Space` or `Arrow Up` on the keyboard.
+   - Tap anywhere on a mobile or touch device.
+   - Click anywhere on the game canvas.
+5. You can perform up to three jumps in a row. The jump count resets when the cat lands.
+6. Use the pause button in the top-right corner to pause the game.
+7. The run ends if the cat hits a box or falls from the rooftop. Select `run again` to start over.
 
 ## Scoring
 
-- Score মিটারে distance হিসেবে দেখানো হয়, যেমন `250 m`।
-- যত বেশি সময় বেঁচে থাকবেন, তত বেশি distance এবং score পাবেন।
-- প্রতি `1000 m` অতিক্রম করলে achievement notification আসবে।
-- আপনার best score browser-এর `localStorage`-এ সংরক্ষিত থাকে, তাই একই browser-এ পরে আবার খেললেও high score দেখা যাবে।
-- সময়ের সঙ্গে game speed ধীরে ধীরে বাড়ে, ফলে run যত লম্বা হবে game তত challenging হবে।
+- Your score is measured as distance in meters, such as `250 m`.
+- The longer you survive, the higher your score becomes.
+- An achievement notification appears every `1000 m`.
+- Your best score is saved in the browser's `localStorage` and remains available for future runs in the same browser.
+- The game gradually becomes faster as your distance increases.
 
-## Game Features
+## Features
 
 - Endless rooftop running gameplay
-- ছয় ধরনের playable cat avatar
-- Keyboard, mouse এবং touch control
+- Six playable cat avatars
+- Keyboard, mouse, and touch controls
 - Triple-jump system
 - Randomly generated obstacles
-- Pause এবং restart option
-- Distance score এবং persistent high score
-- 1000 মিটার পরপর achievement
-- Night city, stars এবং simple sound effects
-- কোনো external library বা build step ছাড়াই চলে
+- Pause and restart options
+- Distance score and persistent high score
+- Milestone achievements every 1000 meters
+- Night city background, stars, and simple sound effects
+- No external libraries or build steps required
 
-## কীভাবে চালাবেন
+## How to Run
 
-এই project চালানোর জন্য installation দরকার নেই।
+No installation is required.
 
-1. এই repository বা folder download করুন।
-2. `RooftopCat.html` ফাইলটি browser-এ open করুন।
-3. Cat নির্বাচন করে game শুরু করুন।
+1. Download or clone this repository.
+2. Open `RooftopCat.html` in a web browser.
+3. Choose a cat and start running.
 
 ## Project Structure
 
 ```text
 RooftopCat/
-├── RooftopCat.html   # সম্পূর্ণ game: HTML, CSS এবং JavaScript
-└── readme.md         # Game description এবং playing guide
+├── RooftopCat.html   # Complete game with HTML, CSS, and JavaScript
+└── readme.md         # Game description and playing guide
 ```
 
-## Technology
+## Technologies
 
 - HTML5
 - CSS3
