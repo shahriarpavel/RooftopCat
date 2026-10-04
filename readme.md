@@ -6,6 +6,10 @@
 
 Each run is different because obstacles are generated randomly. The game is built with HTML Canvas and vanilla JavaScript, so it does not require a game engine, installation, or external dependencies.
 
+## Play Online
+
+[Play Rooftop Cat](https://shahriarpavel.github.io/RooftopCat/)
+
 ## How to Play
 
 1. Open `RooftopCat.html` in any modern web browser.
